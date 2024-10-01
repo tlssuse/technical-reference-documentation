@@ -1,87 +1,24 @@
 :docinfo:
 include::./common_docinfo_vars.adoc[]
+include::./suse-trd_contrib-guide-vars.adoc[]
+[#art-{article-id}]
 
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-// General comments
-// Keep in mind that this is a "getting started" guide and the
-//   audience that you are trying to reach.
-// Leverage ASCIIDoc features to make this document readable and usable:
-//   - Text highlights (follow SUSE style guides)
-//   - Admonitions (i.e., NOTE, TIP, IMPORTANT, CAUTION, WARNING)
-//   - Code blocks
-//   - Lists (ordered and unordered, as appropriate)
-//   - Links (to other resources)
-//   - Images
-//     - Place image files under the ./media directory tree
-//       (e.g., ./media/src/svg, ./media/src/png)
-//     - Format preference: svg > png > jpg
-//     - Consolidate images wherever possible
-//       (i.e., don't use two images when one conveys the message)
-//   - Use sections and subsections to organize and group related
-//     steps.
-// 
-// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-
-
-// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-// Variables & Attributes
+// SUSE Technical Reference Documentation
+// Getting Started Guide
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 //
-// NOTES:
-// 1. Update variables below and adjust docbook file accordingly.
-// 2. Comment out any variables/attributes not used.
-// 3. Follow the pattern to include additional variables.
+// DOCUMENT ATTRIBUTES AND VARIABLES
 //
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// 1. Define variables (document attributes) in the vars file.
+// 2. Develop content and reference variables in the adoc file.
+// 3. Update the docinfo.xml file as needed.
+// 4. Update DC file (at a minimum, deactivate DRAFT mode)
+//
+// For further guidance, see
+//   https://github.com/SUSE/technical-reference-documentation/blob/main/common/templates/start/README.md
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// organization - do NOT modify
-// -
-:trd: Technical Reference Documentation
-:type: Getting Started
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// document and product
-// -
-:title: SUSE Technical Reference Documentation Contributors Guide
-:subtitle: How to Create Documentation for SUSE TRD
-:productname: SUSE Technical Reference Documentation
-:product1: SUSE TRD
-:product1_full: SUSE Technical Reference Documentation
-:product1_url1: https://documentation.suse.com/trd-supported.html
-:product1_url2: https://github.com/SUSE/technical-reference-documentation
-:usecase: contributor workflow
-:executive_summary: This document provides guidance for contributing to {product1_full}.
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// contributors
-// specify information about authors, editors, and others here,
-// then update docinfo file as appropriate
-// -
-:author1_firstname: Terry
-:author1_surname: Smith
-:author1_jobtitle: Global Partner Solutions Director
-:author1_orgname: SUSE
-:author2_firstname: Bryan
-:author2_surname: Gartner
-:author2_jobtitle: Senior Technology Strategist
-:author2_orgname: SUSE
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// define any additional variables here for use within the document
-// -
-
-:asciidoc-url: https://asciidoc.org/
-:asciidoc-docs: https://docs.asciidoctor.org/asciidoc/latest/
-:daps-install-url: https://opensuse.github.io/daps/doc/cha.daps.user.inst.html#sec.daps.user.inst
-:daps2docker-url: https://github.com/openSUSE/daps2docker
-:suse-xsl-url: https://github.com/openSUSE/suse-xsl
-:git-line-endings-url: https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings?platform=windows
-:github-url: https://github.com/
-
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
 = {title}: {subtitle}
@@ -92,21 +29,12 @@ include::./common_docinfo_vars.adoc[]
 
 === Motivation
 
-// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-// Provide a motivation for the document in 2-4 sentences to identify:
-//   - what the document is about
-//   - why it may be of interest to the reader (e.g., a use case)
-//   - what products are being highlighted
-// Include an approved SUSE | Partner logo lock-up if possible
-// Include any additional, relevant details
-// = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-
-{product1_url1}[{product1_full}] ({product1})is an open collection of high quality guidance for solutions that address real-world use cases with featured SUSE, partner, and community components.
+{trd-website}[{trd}] is an open collection of high quality guidance for solutions that address real-world use cases with featured SUSE, partner, and community components.
 Documents are modular and rendered from multiple source files.
-These source files are freely available and open source licensed in the {product1_url2}[GitHub repository].
+These source files are freely available and open source licensed in the {trd-repo}[GitHub repository].
 
 
-{product1} can be generally divided into four types:
+{trd} consists of four types of documents:
 
 * *Getting Started Guide*
 //
@@ -129,10 +57,9 @@ Reference Implementation with specified partner hardware and software components
 Architectural overview of solution from an enterprise landscape perspective.
 
 
-Community engagement with {product1} is encouraged.
+Community engagement with {trd} is encouraged.
 You can easily submit quick fixes and even section updates through _Report an issue_ links in the HTML version of any document.
-
-If you have an interest in contributing a new document, you first should become familiar with the style, tools, and workflows of a successful contributor.
+For longer fixes and new documents, you should reference the {trd-guide}[{title}] to familiar with the style, tools, and workflows of a successful contributor.
 
 
 
@@ -142,7 +69,8 @@ If you have an interest in contributing a new document, you first should become 
 // Specify what this guide covers in no more than 2 sentences.
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-This guide outlines style, tools, and workflows for successful contributions to {product1}.
+This guide outlines style, tools, and workflows for successful contributions to {trd}.
+
 
 
 === Audience
@@ -154,7 +82,7 @@ This guide outlines style, tools, and workflows for successful contributions to 
 //   - required skills
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-This document is intended for architects, engineers, and technical writers who would like to contribute to {product1}.
+This document is intended for architects, developers, engineers, and technical writers.
 
 
 
@@ -168,7 +96,7 @@ This document is intended for architects, engineers, and technical writers who w
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
 
-Contributors to {product1} need the following:
+Contributors to {trd} need the following:
 
 * A plain text editor
 +
@@ -176,12 +104,12 @@ Contributors to {product1} need the following:
 ====
 Your editor should save files encoded to https://en.wikipedia.org/wiki/UTF-8[UTF-8] and end lines only with the line feed character.
 
-See also {git-line-endings-url}[Configuring Git to handle line endings].
+See also {git-line-endings-website}[Configuring Git to handle line endings].
 ====
 
-* {github-url}[GitHub] account and basic Git skills
+* {github-website}[GitHub] account and basic Git skills
 
-* Basic understanding of the {asciidoc-url}[AsciiDoc] markup language
+* Basic understanding of the {asciidoc-website}[AsciiDoc] markup language
 //
 +
 See <<AsciiDoc>>.
@@ -192,9 +120,9 @@ See <<AsciiDoc>>.
 --
 You have two options:
 
-* {daps-install-url}[Install DAPS] and its dependencies directly, including the latest {suse-xsl-url}[SUSE XSL Stylesheets].
+* {daps-install-website}[Install DAPS] and its dependencies directly, including the latest {suse-xsl-website}[SUSE XSL Stylesheets].
 
-* Use the {daps2docker-url}[DAPS2Docker] container implementation.
+* Use the {daps2docker-website}[DAPS2Docker] container implementation.
 --
 +
 See <<DAPS>> for more information.
@@ -220,25 +148,25 @@ include::suse-trd_contrib-workflow.adoc[]
 // Describe the general file and directory structure
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-{product1} is both a {product1_url1}[website] with links to published documents and a {product1_url2}[GitHub repository] of their source files.
-As a contributor, you need a general understanding of the structure of the source repository.
+{trd} is both a {trd-website}[documentation portal] with links to published documentation and a {trd-repo}[GitHub repository] of source files.
+As a contributor, you work with source files.
+So, you need a general understanding of the structure and contents of the source repository.
 
 
 The repository's top-level directories are:
 
-* _linux_: contains documentation focused primarily on aspects of Linux and related products, projects, and tools
+* _linux_: contains Linux-focused reference documentation
 
-* _kubernetes_: contains  documentation focused primarily on Kubernetes and related products, projects, and tools
+* _kubernetes_: contains Kubernetes-focused reference documentation
 
-* _common_: contains text (such as the license and disclaimer), images (such as official SUSE logos), templates (for various document types), and scripts (for simplifying and automating tasks) that may be used across the two major categories.
+* _common_: contains ancillary and shared files, templates, scripts, and so on
+
+* _contributors_: contains this guide for contributors
 
 [listing]
 ----
 ├── common
-│   ├── adoc
-│   ├── bin
-│   ├── images
-│   └── templates
+├── contributors
 ├── kubernetes
 │   ├── enterprise
 │   ├── reference
@@ -250,7 +178,7 @@ The repository's top-level directories are:
 ----
 
 
-Inside the _linux_ and _kubernetes_ directories, are directories for the document types:
+The _linux_ and _kubernetes_ directories are further subdivided by document type:
 
 * _start_: getting started guides
 
@@ -259,7 +187,14 @@ Inside the _linux_ and _kubernetes_ directories, are directories for the documen
 * _enterprise_: enterprise architectures
 
 
-=== Getting started guide structure
+[NOTE]
+====
+The distinction between Linux- and Kubernetes-focused reference documentation may become deprecated, and the contents merged.
+====
+
+
+
+=== Getting Started Guide structure
 
 // subsection: repository and document structure for GSGs
 include::suse-trd_contrib-gs-structure.adoc[]
@@ -279,7 +214,7 @@ Coming soon.
 // Outline use of setup scripts and templates
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-Your {product1} documentation project relies on different types of source files, placed in specific locations within the repository's directory structure.
+Your {trd} documentation project relies on different types of source files, placed in specific locations within the repository's directory structure.
 The files and structures can be created from scratch.
 But you can use the provided automation tools to generate a framework for you, including templates for your source files.
 
@@ -321,9 +256,9 @@ include::suse-trd_contrib-daps.adoc[]
 // - Next steps (unordered list of 2-4 further learning resources)
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-{product1_full} is a repository of high quality documentation for solutions that address real-world use cases with featured SUSE, partner, and community components.
+{trd} is a repository of high quality documentation for solutions that address real-world use cases with featured SUSE, partner, and community components.
 
-This document provides an overview of the tools, techniques, workflows, and styles that you will use to make successful contributions to {product1}.
+This document provides an overview of the tools, techniques, workflows, and styles that you will use to make successful contributions to {trd}.
 
 
 
