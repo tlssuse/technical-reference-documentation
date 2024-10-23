@@ -38,7 +38,7 @@
 //   :rev1-description: Original version
 // Set docdate to the most recent revision.
 //-
-:rev2-date: 2024-10-02
+:rev2-date: 2024-10-23
 :rev2-description: SUSE Docs portal refresh
 :rev1-date: 2023-12-18
 :rev1-description: Original version
@@ -194,7 +194,7 @@
 :daps-install-website: https://opensuse.github.io/daps/doc/cha.daps.user.inst.html#sec.daps.user.inst
 :daps2docker-website: https://github.com/openSUSE/daps2docker
 :suse-xsl-website: https://github.com/openSUSE/suse-xsl
-:git-line-endings-url: https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings?platform=windows
+:git-line-endings-website: https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings?platform=windows
 :github-website: https://github.com/
 :git-website: https://git-scm.com/
 

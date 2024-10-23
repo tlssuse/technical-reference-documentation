@@ -3,7 +3,7 @@
 // Section: AsciiDoc
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-{product1} documentation is rendered from plain text files.
+{trd} documentation is rendered from plain text files.
 Formatting (including structure and text styling) is indicated with https://asciidoc.org/[AsciiDoc].
 This is a lightweight and semantic markup language with an intuitive syntax that is primarily designed for writing technical documentation.
 
@@ -51,7 +51,7 @@ The following sections address specific aspects of document structure and text s
 Think of document attributes as document-scoped variables.
 Document attributes can be defined anywhere in your document and used from that point forward.
 
-{product1} uses document attributes to define some required content, such as document title, author information, and product names.
+{trd} uses document attributes to define some required content, such as document title, author information, and product names.
 You can define your own document attributes and reference them throughout your document for frequently repeated content.
 
 The definition of a document attribute takes the form:

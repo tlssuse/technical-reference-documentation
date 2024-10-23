@@ -116,22 +116,23 @@ Accepted SUSE product abbreviations are listed in the table below.
 |===
 |Abbreviation | Product name
 
-|sles |SUSE Linux Enterprise Server
-|slessap |SUSE Linux Enterprise Server for SAP Applications
-|slehpc |SUSE Linux Enterprise High Performance Computing
-|slemicro |SUSE Linux Enterprise Micro
-|slelp |SUSE Linux Enterprise Live Patching
-|slert |SUSE Linux Enterprise Real Time
-|sleha |SUSE Linux Enterprise for High Availability
-|slebci |SUSE Linux Enterprise Base Container Images
-|suma |SUSE Manager
-|rancher | Rancher Prime by SUSE
-|neuvector | NeuVector Prime by SUSE
-|harvester | Harvester by SUSE
-|rke | Rancher Kubernetes Engine
-|rke2 | Rancher Kubernetes Engine 2
-|k3s | K3s by SUSE
-|longhorn | Longhorn by SUSE
+|sles |SUSE® Linux Enterprise Server
+|slessap |SUSE® Linux Enterprise Server for SAP Applications
+|slehpc |SUSE® Linux Enterprise High Performance Computing
+|slmicro |SUSE® Linux Micro
+|slelp |SUSE® Linux Enterprise Live Patching
+|slert |SUSE® Linux Enterprise Real Time
+|sleha |SUSE® Linux Enterprise for High Availability
+|slebci |SUSE® Linux Enterprise Base Container Images
+|sliberty |SUSE® Multi-Linux Support (SUSE Liberty Linux)
+|suma |SUSE® Multi-Linux Manager
+|rancher |SUSE® Rancher Prime
+|neuvector |SUSE® Security (NeuVector)
+|harvester |SUSE® Virtualization (Harvester)
+|longhorn |SUSE® Storage (Longhorn)
+|rke |Rancher Kubernetes Engine
+|rke2 |Rancher Kubernetes Engine 2
+|k3s |K3s
 |===
 
 ====
@@ -434,7 +435,7 @@ The last section of the docinfo file you may want to edit identifies the logo th
 </cover>
 ----
 
-The default logo is the official SUSE company logo, which is always appropriate for all {product1_full}.
+The default logo is the official SUSE company logo, which is always appropriate for all {trd}.
 If you wish, you can specify a logo "lock-up" or "mash-up" by updating the "fileref" option with the name of the appropriate image file.
 
 [NOTE]

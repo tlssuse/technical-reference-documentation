@@ -3,7 +3,7 @@
 // Section: Style
 // = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
-{product1} is part of the https://documentation.suse.com/[SUSE Documentation] ecosystem.
+{trd} is part of the https://documentation.suse.com/[SUSE Documentation] ecosystem.
 Its objective is to provide well-structured, clear, and concise technical information in a way that facilitates real-world problem-solving.
 Consistent writing style and formatting contribute to the creation of high quality documentation.
 
@@ -12,7 +12,7 @@ Consistent writing style and formatting contribute to the creation of high quali
 
 Writing style goes beyond the essential elements of spelling, grammar, and punctuation to include tone of voice, choice of words, sentence and paragraph structure, and more.
 
-Keep in mind the following general writing style guidance as you create your documentation for {product1}:
+Keep in mind the following general writing style guidance as you create your documentation for {trd}:
 
 * Make your content compelling, relevant, and valuable for your target audience.
 
